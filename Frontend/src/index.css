@@ -1,0 +1,154 @@
+/* App.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+.App {
+  min-height: 100vh;
+  margin: 0;
+  text-align: left;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1.15rem;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #0c0c0c;
+  color: white;
+}
+.loading {
+  color: white;
+  text-align: center;
+}
+.error {
+  color: rgb(255, 56, 56);
+  text-align: center;
+}
+
+/* edit.css */
+.edit-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c0c0c;
+  height: 100vh;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  align-self: end;
+  margin: 1rem 1.15rem 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(41, 128, 243);
+}
+
+.input-container {
+  width: 80%;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.input-container > input {
+  margin: 1rem 0 1rem 0;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  background-color: #505050;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+.input-container > textarea {
+  padding: 0.25rem 0.5rem 4rem 0.5rem;
+  height: 100px;
+  background-color: #505050;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 1rem 0 1rem 0;
+  text-align: start;
+  font-family: "Noto Sans", sans-serif;
+}
+.input-image-container {
+  flex-wrap: wrap;
+}
+
+label:nth-child(7) {
+  margin-bottom: 1rem;
+}
+
+.input-image {
+  cursor: pointer;
+  border-radius: 14px;
+  background-color: white;
+  padding: 0.5rem;
+  width: 90px;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  height: 130px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.theme-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.theme-container > label {
+  margin-right: 5rem;
+}
+
+/* header.css */
+header {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-edit {
+  cursor: pointer;
+  align-self: flex-end;
+  border: 2px solid white;
+  margin: 1rem 1.15rem 0 0;
+  padding: 0.45rem;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 2rem;
+  color: white;
+}
+.info-username {
+  width: 50%;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.info-age,
+.info-about {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-ava {
+  width: 85px;
+  height: 130px;
+  object-fit: cover;
+  overflow: hidden;
+}
